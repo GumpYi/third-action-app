@@ -8,6 +8,7 @@ env:
   MONGODB_DB_NAME: gha-demo
 jobs:
   test:
+    environment: Dev
     runs-on: ubuntu-latest
     env:
       MONGODB_CLUSTER_ADDRESS: ${{ secrets.MONGODB_CLUSTER_ADDRESS }}
